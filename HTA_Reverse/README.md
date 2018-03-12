@@ -11,3 +11,4 @@
 
 - The script will attempt to run the HTA file twice. Once for x64 and once for x86
 - the script uses mshta.exe. Adjust it according to your situation
+- The PS window will remain open when typing the command

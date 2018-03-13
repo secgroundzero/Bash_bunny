@@ -7,7 +7,7 @@ GET SWITCH_POSITION
 
 Q GUI r
 Q DELAY 300
-Q STRING powershell  
+Q STRING powershell -WindowStyle Hidden
 Q ENTER
 
 Q DELAY 2000
